@@ -10,9 +10,9 @@ togglePassword.addEventListener("click", function (e) {
 });
 // toggle eye icon Login
 function changeImageLogin() {
-  if (togglePassword.getAttribute("src") === "../assets/Login/visible.png") {
-    togglePassword.setAttribute("src", "/assets/Login/hide.png");
+  if (togglePassword.getAttribute("src") === "assets/Login/visible.png") {
+    togglePassword.setAttribute("src", "assets/Login/hide.png");
   } else {
-    togglePassword.setAttribute("src", "../assets/Login/visible.png");
+    togglePassword.setAttribute("src", "assets/Login/visible.png");
   }
 }
