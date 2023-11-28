@@ -4,10 +4,10 @@ const balance = document.getElementById("member-balance");
 
 // toggle eye icon Home
 function changeImageHome() {
-  if (balanceEye.getAttribute("src") === "../assets/Login/visible.png") {
-    balanceEye.setAttribute("src", "/assets/Login/hide.png");
+  if (balanceEye.getAttribute("src") === "assets/Login/visible.png") {
+    balanceEye.setAttribute("src", "assets/Login/hide.png");
   } else {
-    balanceEye.setAttribute("src", "../assets/Login/visible.png");
+    balanceEye.setAttribute("src", "assets/Login/visible.png");
   }
 }
 function hideBalance() {
