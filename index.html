@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Login Page</title>
+  </head>
+  <body class="bg-gray-100 relative">
+    <div class="container-logo-login">
+      <img src="../assets/Logo.png" alt="" />
+    </div>
+    <div class="">
+      <div class="container-img">
+        <img
+          class="h-64 w-full object-cover"
+          src="../assets/Login/Banner Login.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="mx-4 mt-28">
+        <!-- insert form id -->
+        <form id="" class="flex flex-col gap-6" action="#">
+          <div class="">
+            <label class="absolute ml-6 mt-2 text-gray-400 text-sm" for="email"
+              ><b>Email</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="email"
+              placeholder="tes123@gmail.com"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="relative">
+            <div class="absolute eye-icon">
+              <img
+                id="togglePassword"
+                onclick="changeImageLogin()"
+                src="../assets/Login/visible.png"
+                alt=""
+              />
+            </div>
+
+            <label
+              class="absolute ml-6 mt-2 text-gray-400 text-sm"
+              for="password"
+              ><b>Password</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="password"
+              placeholder="insert password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+
+          <div class="flex justify-end mr-4">
+            <a class="text-sm text-gray-400 font-bold" href="#"
+              >Recovery Password</a
+            >
+          </div>
+          <!-- insert button form === form id -->
+          <!-- change onclick function, validate through backend  -->
+          <input
+            class="text-sm text-white bg-purple-800 py-2 rounded-lg"
+            type="submit"
+            value="Sign In"
+            onclick="window.location.href='home.html'"
+          />
+        </form>
+        <div class="text-center">
+          <p class="mt-6">
+            Don't Have An Account?
+            <a class="text-blue-600 font-bold" href="#">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>

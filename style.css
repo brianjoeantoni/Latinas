@@ -1,0 +1,142 @@
+/* start custom style */
+
+.ratio {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.active {
+  color: #ec4899;
+  border-color: #6b21a8 !important;
+  font-weight: 700;
+}
+
+.min-w-16 {
+  min-width: 4rem;
+}
+.min-w-21 {
+  min-width: 5.25rem;
+}
+.min-w-28 {
+  min-width: 7rem;
+}
+.max-w-28 {
+  max-width: 7rem;
+}
+
+.text-xxs{
+  font-size: 10px;
+}
+
+.modal-confirmation,
+.modal-booked {
+  min-width: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.modal-confirmation::backdrop,
+.modal-booked::backdrop {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* end custom style */
+
+/* Login Page */
+.container-logo-login {
+  position: absolute;
+  top: 37.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  z-index: 1;
+}
+
+/* Home Page */
+.background-one {
+  background-image: url("../assets/Home/Img\ PoundFit.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+.background-two {
+  background-image: url("../assets/Home/Img\ Strong\ Nation.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+
+.grid-container-recommended {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: "one two three";
+}
+
+.background-recommended-one {
+  background-image: url("../assets/Home/Recommended/1.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: one;
+}
+.background-recommended-two {
+  background-image: url("../assets/Home/Recommended/2.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: two;
+}
+.background-recommended-three {
+  background-image: url("../assets/Home/Recommended/3.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+  border-radius: 4px;
+  min-height: 150px;
+  min-width: 75px;
+  grid-area: three;
+}
+
+/* Balance Page */
+.active,
+btn:hover {
+  color: #ec4899;
+  border-color: #6b21a8;
+}
+
+.grid-balance {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 350px) {
+  .grid-balance {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Profile Page */
+.version {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/* Profile Page > next pages */
+.profile-next-pages-btn {
+  width: 90%;
+  position: fixed;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

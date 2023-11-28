@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Class Detail</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div class="flex gap-12 bg-purple-400 p-4 items-center">
+      <img class="w-10 h-10" src="/assets/Logo.png" alt="" />
+      <p class="text-white">FIT N FAB</p>
+    </div>
+
+    <!-- change to class background -->
+    <div class="background-one h-36 bg-white"></div>
+    <div class="m-4 flex flex-col gap-2">
+      <!-- change star rating -->
+      <div class="bg-white flex gap-2 p-4 text-sm font-bold rounded-lg">
+        <p class="text-purple-800">Rating :</p>
+        <p id="rating" class="text-gray-400">4/5</p>
+        <div id="rating-star" class="w-6 h-6 flex gap-1 -mt-0.5">
+          <img src="/assets/Class/Rate.png" alt="star-error" />
+          <img src="/assets/Class/Rate.png" alt="star-error" />
+          <img src="/assets/Class/Rate.png" alt="star-error" />
+          <img src="/assets/Class/Rate.png" alt="star-error" />
+          <img src="/assets/Class/Rate 1.png" alt="star-error" />
+        </div>
+      </div>
+
+      <!-- change to class details -->
+      <div>
+        <div class="bg-white p-4 font-bold text-sm rounded-t-lg">
+          <p class="class-title text-purple-800">Pound Fit Class</p>
+        </div>
+        <hr />
+        <div
+          class="bg-white flex flex-col gap-2 p-4 font-bold text-sm rounded-b-lg"
+        >
+          <div class="flex">
+            <p class="text-gray-400 min-w-21">Location</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-location">QBIG BSD City</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Date & Time</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-date-and-time-detail">Mon 2 Okt, 19.00 - 20.00</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Coach</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-coach">Mrs. Gwen</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Slot</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-slot">7/10</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Duration</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-duration">60 Minutes</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Level</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p class="class-level">Beginner</p>
+            </div>
+          </div>
+          <div class="flex">
+            <p class="text-gray-400 min-w-21 overflow-x-scroll">Price</p>
+            <div class="flex gap-2">
+              <p>:</p>
+              <p>Rp <span class="class-price">75.000</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- change to class description -->
+      <div>
+        <div class="bg-white p-4 font-bold text-sm rounded-t-lg">
+          <p class="class-title text-purple-800">Description</p>
+        </div>
+        <hr />
+        <div class="bg-white p-4 text-sm rounded-b-lg">
+          <p>
+            POUND® is a full-body jam session that combines cardio, conditioning
+            and core work with the excitement and euphoria of drumming. Designed
+            for all fitness levels, POUND® provides the perfect atmosphere to
+            let loose, get energized, tone up and rock out!
+          </p>
+          <br />
+          <div>What to Bring:</div>
+          <ol class="list-decimal ml-4 mb-4">
+            <li>Yoga Mat</li>
+            <li>Hand Towel</li>
+            <li>Water Bottle</li>
+          </ol>
+          <button
+            class="class-book-button w-full bg-pink-500 text-white py-1 rounded-full"
+            data-open-confirmation-modal
+          >
+            Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <a href="home.html">
+          <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="class.html">
+          <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <dialog data-confirmation-modal class="modal-confirmation">
+      <div class="bg-white p-4 font-bold text-sm">
+        <p class="class-title text-purple-800">Confirmation</p>
+      </div>
+      <hr />
+      <div class="bg-white flex justify-center px-4 pt-6 text-sm rounded-b-lg">
+        <p class="font-semibold">
+          Are you sure you want to confirm this class schedule?
+        </p>
+      </div>
+      <div class="flex justify-around my-6">
+        <button
+          class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-no-close-modal
+        >
+          No
+        </button>
+        <button
+          class="class-confirm-yes-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-open-booked-modal
+          data-yes-close-modal
+        >
+          Yes
+        </button>
+      </div>
+    </dialog>
+
+    <dialog data-booked-modal class="modal-booked">
+      <div>
+        <div class="bg-white p-4 font-bold text-sm">
+          <p class="class-title text-purple-800">Booked</p>
+        </div>
+        <hr />
+        <div
+          class="bg-white flex flex-col justify-center p-4 font-semibold text-sm rounded-b-lg"
+        >
+          <div class="flex justify-center mt-6">
+            <img
+              class="w-28 h-28"
+              src="/assets/Class/SuccessCheck.png"
+              alt=""
+            />
+          </div>
+          <p class="my-6">
+            Successful, the Class has been scheduled for you at
+            <span class="class-booked-detail"
+              >Mon 2 Okt, 19.00 - 20.00 at QBIG BSD City!</span
+            >
+          </p>
+          <p>Current Balance : Rp<span class="current-balance">25.000</span></p>
+        </div>
+        <div class="flex justify-center py-6">
+          <button
+            class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+            data-next-close-modal
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+  <script src="/detailClass.js"></script>
+</html>

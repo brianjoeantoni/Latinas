@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Booking Detail</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div class="flex gap-12 bg-purple-400 p-4 items-center">
+      <img class="w-10 h-10" src="/assets/Logo.png" alt="" />
+      <p class="text-white">FIT N FAB</p>
+    </div>
+
+    <div>
+      <p class="m-4 font-bold">Booking Detail</p>
+      <hr />
+      <div class="bg-white m-4 rounded-lg text-xs">
+        <div class="p-4 flex gap-4 w-full">
+          <img class="w-10 h-10" src="../assets/Logo.png" alt="logo" />
+          <div class="bg-white flex flex-col gap-2 text-xs rounded-b-lg">
+            <div class="flex">
+              <p class="text-gray-400 min-w-21">Booking ID</p>
+              <div class="flex gap-2">
+                <p>:</p>
+                <p class="class-location">/*insert booking ID*/</p>
+              </div>
+            </div>
+            <div class="flex">
+              <p class="text-gray-400 min-w-21 overflow-x-scroll">Class Name</p>
+              <div class="flex gap-2">
+                <p>:</p>
+                <p class="class-date-and-time-detail">/*insert class name*/</p>
+              </div>
+            </div>
+            <div class="flex">
+              <p class="text-gray-400 min-w-21 overflow-x-scroll">Location</p>
+              <div class="flex gap-2">
+                <p>:</p>
+                <p class="class-coach">/*insert location*/</p>
+              </div>
+            </div>
+            <div class="flex">
+              <p class="text-gray-400 min-w-21 overflow-x-scroll">
+                Date & Time
+              </p>
+              <div class="flex gap-2">
+                <p>:</p>
+                <p class="class-slot">/*insert date & time*/</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end px-4 pb-4">
+          <button
+            class="flex text-white text-sm bg-pink-500 pb-0.5 px-6 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <a href="home.html">
+          <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+      </div>
+      <div class="w-12">
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

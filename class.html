@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Class</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div class="flex gap-12 bg-purple-400 p-4 items-center">
+      <img class="w-10 h-10" src="/assets/Logo.png" alt="" />
+      <p class="text-white">FIT N FAB</p>
+    </div>
+
+    <div>
+      <p class="m-4 font-bold">Class</p>
+      <hr />
+      <div class="bg-white m-4 rounded-lg text-xs">
+        <div class="p-4 flex flex-col gap-4 text-gray-400 w-full">
+          <div class="flex flex-wrap gap-2 items-center">
+            <p class="min-w-16">Location</p>
+            <p>:</p>
+
+            <div class="flex gap-4 justify-center items-center">
+              <div
+                class="bg-gray-200 flex justify-between items-center gap-6 w-44 min-w-21 py-2 px-4 text-start rounded-lg border border-solid border-gray-300"
+              >
+                <p>Choose Location</p>
+                <img class="w-4 h-4" src="/assets/Home/location.png" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 items-center">
+            <p class="min-w-16">Date</p>
+            <p>:</p>
+
+            <div class="flex gap-4 justify-center items-center">
+              <div
+                class="bg-gray-200 flex justify-between items-center gap-6 w-44 min-w-21 py-2 px-4 text-start rounded-lg border border-solid border-gray-300"
+              >
+                <p>Choose Date</p>
+                <img class="w-4 h-4" src="/assets/Home/calendar.png" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 items-center">
+            <p class="min-w-16">Class</p>
+            <p>:</p>
+
+            <div class="flex gap-4 justify-center items-center">
+              <div
+                class="bg-gray-200 flex justify-between items-center gap-6 w-44 min-w-21 py-2 px-4 text-start rounded-lg border border-solid border-gray-300"
+              >
+                <p>Choose Class</p>
+                <img class="w-4 h-4" src="/assets/Home/class.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="flex justify-between mx-4 gap-1 text-xxs">
+            <div
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+            >
+              <div>
+                <p>Morning</p>
+                <p>06.00 - 11.00 AM</p>
+              </div>
+              <img class="w-6 h-6" src="/assets/Class/sunrise.png" />
+            </div>
+            <div
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+            >
+              <div>
+                <p>Afternoon</p>
+                <p>12.00 - 05.00 PM</p>
+              </div>
+              <img class="w-6 h-6" src="/assets/Class/sun.png" />
+            </div>
+            <div
+              class="p-2 flex items-center gap-2 w-max border border-solid rounded-lg border-gray-300"
+            >
+              <div>
+                <p>Night</p>
+                <p>06.00 - 10.00 PM</p>
+              </div>
+              <img class="w-6 h-6" src="/assets/Class/moon.png" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-end p-4">
+          <button
+            class="flex text-white text-sm bg-pink-500 pb-0.5 px-6 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- change to list of upcoming class -->
+      <div id="upcoming-class">
+        <p class="m-4 font-bold">Upcoming Class</p>
+        <div id="upcoming-class-list" class="m-4 flex flex-col gap-4">
+          <div class="background-one bg-white rounded-lg">
+            <div class="m-4">
+              <p class="class-title text-white font-bold">Pound Fit</p>
+              <div class="flex my-2">
+                <img class="w-6 h-6" src="/assets/Home/location.png" />
+                <p class="class-location text-white font-semibold">
+                  QBIG BSD City
+                </p>
+              </div>
+              <div
+                class="inline-block px-4 bg-white rounded-full border border-solid border-black"
+              >
+                <p class="font-semibold text-sm pb-1">
+                  Rp<span class="class-price">75.000</span>
+                </p>
+              </div>
+              <div class="flex gap-2 justify-end text-white text-xs">
+                <div
+                  class="flex items-center gap-1 bg-purple-800 py-1 px-2 rounded-md"
+                >
+                  <img class="w-5 h-5" src="/assets/Home/Moon.png" />
+                  <p class="class-time">19:00</p>
+                </div>
+                <button
+                  onclick="window.location.href='detailClass.html'"
+                  class="flex items-center bg-pink-500 px-4 rounded-md"
+                >
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="background-two bg-white rounded-lg">
+            <div class="m-4">
+              <p class="class-title text-white font-bold">Strong Nation</p>
+              <div class="flex my-2">
+                <img class="w-6 h-6" src="/assets/Home/location.png" />
+                <p class="class-location text-white font-semibold">
+                  QBIG BSD City
+                </p>
+              </div>
+              <div
+                class="inline-block px-4 bg-white rounded-full border border-solid border-black"
+              >
+                <p class="font-semibold text-sm pb-1">
+                  Rp<span class="class-price">75.000</span>
+                </p>
+              </div>
+              <div class="flex gap-2 justify-end text-white text-xs">
+                <div
+                  class="flex items-center gap-1 bg-purple-800 py-1 px-2 rounded-md"
+                >
+                  <img class="w-5 h-5" src="/assets/Home/Moon.png" />
+                  <p class="class-time">19:00</p>
+                </div>
+                <button class="flex items-center bg-pink-500 px-4 rounded-md">
+                  Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <a href="home.html">
+          <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+      </div>
+      <div class="w-12">
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

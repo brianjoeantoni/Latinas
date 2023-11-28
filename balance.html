@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Balance</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div class="flex gap-12 bg-purple-400 p-4 items-center">
+      <img class="w-10 h-10" src="/assets/Logo.png" alt="" />
+      <p class="text-white">FIT N FAB</p>
+    </div>
+
+    <div>
+      <p class="m-4 font-bold">Balance</p>
+      <hr />
+      <div class="bg-white m-4 p-4 rounded-lg text-sm">
+        <div class="flex gap-2">
+          <p class="font-semibold">Your Balance</p>
+          <img
+            id="balance-eye"
+            onclick="hideBalance();changeImageHome()"
+            class="w-6"
+            src="../assets/Login/hide.png"
+            alt=""
+          />
+        </div>
+        <p id="balance" class="font-semibold text-gray-400">
+          Rp <span id="member-balance">100.000</span>
+        </p>
+      </div>
+      <hr />
+      <p class="m-4 font-bold">Top Up Your Balance</p>
+      <hr />
+      <div class="bg-white m-4 p-4 rounded-lg text-sm">
+        <p class="font-semibold mb-4">Select Amount:</p>
+
+        <div class="grid-balance font-semibold text-gray-400">
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            20.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            50.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            100.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            200.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            500.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            1.000.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            2.000.000
+          </button>
+          <button
+            class="btn py-2 px-8 border border-solid border-gray-300 rounded-xl"
+          >
+            Edit
+          </button>
+        </div>
+        <div class="flex justify-center items-center">
+          <button
+            class="text-xs mt-8 text-white bg-pink-500 py-2 px-10 rounded-lg"
+          >
+            Top Up Balance
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <a href="home.html">
+          <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="class.html">
+          <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <img src="/assets/Footer/Balance.png" alt="" />
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
+  </body>
+  <script src="balance.js"></script>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Home</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div
+      id="member-detail"
+      class="flex gap-4 p-4 items-center bg-white border-solid border border-y-gray-300"
+    >
+      <div class="logo-home w-16">
+        <img src="/assets/Logo.png" alt="" />
+      </div>
+      <div class="member-detail-home flex flex-col align-middle justify-center">
+        <p class="font-bold">Welcome, <span id="member-name">Member</span></p>
+        <p class="text-pink-500">Balance :</p>
+        <!-- change balance data-->
+        <div class="flex gap-2">
+          <p id="balance">Rp <span id="member-balance">100.000</span></p>
+          <img
+            id="balance-eye"
+            onclick="hideBalance();changeImageHome()"
+            class="w-6"
+            src="../assets/Login/hide.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="date" class="overflow-x-scroll flex justify-between m-4">
+      <div
+        class="active text-center whitespace-nowrap font-bold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Sun</p>
+        <p>1 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Mon</p>
+        <p>2 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Tue</p>
+        <p>3 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Wed</p>
+        <p>4 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Thu</p>
+        <p>5 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Fri</p>
+        <p>6 Okt</p>
+      </div>
+      <div
+        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+      >
+        <p>Sat</p>
+        <p>7 Okt</p>
+      </div>
+    </div>
+
+    <!-- change to user schedule -->
+    <div id="schedule-detail">
+      <p class="m-4 font-bold">Your Schedule</p>
+      <!-- <div class="bg-white m-4 rounded-lg">
+        <div class="flex flex-wrap justify-between p-2 text-sm">
+          <div class="flex items-center gap-2">
+            <img class="w-6 h-6" src="/assets/Home/calendar.png" alt="" />
+            <div class="whitespace-nowrap">
+              <p id="schedule-date">Mon 2 Okt</p>
+              <p id="schedule-time">19:00</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <img class="w-6 h-6" src="/assets/Home/class.png" alt="" />
+            <p id="schedule-name">Pound Fit</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <img class="w-6 h-6" src="/assets/Home/location.png" alt="" />
+            <p id="schedule-location">QBIG BSD City</p>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="text-xs text-white bg-pink-500 py-1 px-6 mt-2 mb-4 rounded-sm"
+            data-open-confirmation-modal
+          >
+            Cancel Class
+          </button>
+        </div>
+      </div> -->
+      <div class="bg-white m-4 rounded-lg">
+        <!-- change to dynamic booking-id -->
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Okt, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
+          </button>
+        </div>
+        <hr class="bg-black" />
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Okt, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
+          </button>
+        </div>
+        <hr class="bg-black" />
+        <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-10 h-10 rounded-lg"
+              src="../assets/Logo.png"
+              alt="logo"
+            />
+            <div class="flex flex-col gap-1">
+              <p>Booking ID : /*insert id*/</p>
+              <p>Pound Fit @QBIG BSD City /*insert location*/</p>
+              <p>Mon 2 Okt, 19:00 /*insert date*/</p>
+            </div>
+          </div>
+          <button
+            class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+          >
+            Detail
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- change to list of upcoming class -->
+    <div id="upcoming-class">
+      <p class="m-4 font-bold">Upcoming Class</p>
+      <div id="upcoming-class-list" class="m-4 flex flex-col gap-4">
+        <div class="background-one bg-white rounded-lg">
+          <div class="m-4">
+            <p class="class-title text-white font-bold">Pound Fit</p>
+            <div class="flex my-2">
+              <img class="w-6 h-6" src="/assets/Home/location.png" />
+              <p class="class-location text-white font-semibold">
+                QBIG BSD City
+              </p>
+            </div>
+            <div
+              class="inline-block px-4 bg-white rounded-full border border-solid border-black"
+            >
+              <p class="font-semibold text-sm pb-0.5">
+                Rp<span class="class-price">75.000</span>
+              </p>
+            </div>
+            <div class="flex gap-2 justify-end text-white text-xs">
+              <div
+                class="flex items-center gap-1 bg-purple-800 py-1 px-2 rounded-md"
+              >
+                <img class="w-5 h-5" src="/assets/Home/Moon.png" />
+                <p class="class-time">19:00</p>
+              </div>
+              <button
+                onclick="window.location.href='detailClass.html'"
+                class="flex items-center bg-pink-500 px-4 rounded-md"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="background-two bg-white rounded-lg">
+          <div class="m-4">
+            <p class="class-title text-white font-bold">Strong Nation</p>
+            <div class="flex my-2">
+              <img class="w-6 h-6" src="/assets/Home/location.png" />
+              <p class="class-location text-white font-semibold">
+                QBIG BSD City
+              </p>
+            </div>
+            <div
+              class="inline-block px-4 bg-white rounded-full border border-solid border-black"
+            >
+              <p class="font-semibold text-sm pb-0.5">
+                Rp<span class="class-price">75.000</span>
+              </p>
+            </div>
+            <div class="flex gap-2 justify-end text-white text-xs">
+              <div
+                class="flex items-center gap-1 bg-purple-800 py-1 px-2 rounded-md"
+              >
+                <img class="w-5 h-5" src="/assets/Home/Moon.png" />
+                <p class="class-time">19:00</p>
+              </div>
+              <button class="flex items-center bg-pink-500 px-4 rounded-md">
+                Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="recommended-for-you">
+      <p class="m-4 font-bold">Recommended for you</p>
+      <div
+        class="m-4 grid-container-recommended text-xs text-white font-semibold"
+      >
+        <div class="background-recommended-one rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            Start from Top Up <span class="text-pink-500"> 100.000 </span> got
+            rewards <span class="text-pink-500"> 20.000 </span>
+          </p>
+        </div>
+        <div class="background-recommended-two rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            get <span class="text-pink-500">10%</span> discount
+            <span class="text-green-500">@starbucks</span> with
+            <span class="text-pink-500">Latinas</span> Membership
+          </p>
+        </div>
+        <div class="background-recommended-three rounded-l relative">
+          <p class="absolute bottom-0 m-2">
+            Start from Top Up <span class="text-pink-500">100.000</span> got
+            rewards <span class="text-pink-500"> 20.000 </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
+    >
+      <div class="w-12">
+        <img class="ratio" src="/assets/Footer/Home.png" alt="" />
+      </div>
+      <div class="w-12">
+        <a href="class.html">
+          <img class="ratio" src="/assets/Footer/Class.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="balance.html">
+          <img src="/assets/Footer/Balance.png" alt="" />
+        </a>
+      </div>
+      <div class="w-12">
+        <a href="profile.html">
+          <img src="/assets/Footer/Profile.png" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <dialog data-confirmation-modal class="modal-confirmation">
+      <div class="bg-white p-4 font-bold text-sm">
+        <p class="class-title text-purple-800">Confirmation</p>
+      </div>
+      <hr />
+      <div class="bg-white flex justify-center px-4 pt-6 text-sm rounded-b-lg">
+        <p class="font-semibold">
+          Are you sure you want to cancel this class schedule?
+        </p>
+      </div>
+      <div class="flex justify-around my-6">
+        <button
+          class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-no-close-modal
+        >
+          No
+        </button>
+        <button
+          class="class-confirm-yes-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-yes-close-modal
+        >
+          Yes
+        </button>
+      </div>
+    </dialog>
+  </body>
+  <script src="home.js"></script>
+</html>
