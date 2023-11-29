@@ -12,7 +12,7 @@
   <body class="relative bg-gray-100 mb-16">
     <div
       id="member-detail"
-      class="flex gap-4 p-4 items-center bg-white border-solid border border-y-gray-300"
+      class="flex gap-4 p-4 items-center bg-white border-solid border border-y-gray-300 relative"
     >
       <div class="logo-home w-16">
         <img src="assets/Profile/Photo Profile.png" alt="" />
@@ -32,6 +32,10 @@
           />
         </div>
       </div>
+      <div class="member-detail-home self-start absolute right-4 text-right">
+        <p class="font-bold">BMI</p>
+        <p id="member-bmi" class="text-pink-500">123 /**/</p>
+      </div>
     </div>
 
     <div class="text-sm font-semibold">
@@ -45,28 +49,21 @@
       </div>
       <hr />
       <div class="flex justify-between px-4 py-4">
-        <p>Settings</p>
-        <img class="w-4 h-5" src="assets/Profile/next.png" />
-      </div>
-      <hr />
-      <div class="flex justify-between px-4 py-4">
-        <p>Change Language</p>
-        <img class="w-4 h-5" src="assets/Profile/next.png" />
-      </div>
-      <hr />
-      <div class="flex justify-between px-4 py-4">
-        <p>Notifications</p>
-        <img class="w-4 h-5" src="assets/Profile/next.png" />
-      </div>
-      <hr />
-      <div class="flex justify-between px-4 py-4">
         <p>Terms & Conditions</p>
-        <img class="w-4 h-5" src="assets/Profile/next.png" />
+        <img
+          onclick="window.location.href='tnc.html'"
+          class="w-4 h-5"
+          src="assets/Profile/next.png"
+        />
       </div>
       <hr />
       <div class="flex justify-between px-4 py-4">
         <p>FAQ</p>
-        <img class="w-4 h-5" src="assets/Profile/next.png" />
+        <img
+          onclick="window.location.href='faq.html'"
+          class="w-4 h-5"
+          src="assets/Profile/next.png"
+        />
       </div>
       <hr />
       <div class="flex justify-between px-4 py-4">
@@ -94,7 +91,7 @@
       </div>
       <div class="w-12">
         <a href="class.html">
-          <img class="ratio" src="/ssets/Footer/Class.png" alt="" />
+          <img class="ratio" src="assets/Footer/Class.png" alt="" />
         </a>
       </div>
       <div class="w-12">

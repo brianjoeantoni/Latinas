@@ -24,7 +24,7 @@
   max-width: 7rem;
 }
 
-.text-xxs{
+.text-xxs {
   font-size: 10px;
 }
 
@@ -38,6 +38,10 @@
 .modal-confirmation::backdrop,
 .modal-booked::backdrop {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="radio"] {
+  accent-color: #8f8f8f;
 }
 
 /* end custom style */
@@ -132,11 +136,19 @@ btn:hover {
   transform: translate(-50%, 50%);
 }
 
-/* Profile Page > next pages */
+/* Profile Page > next page (update button) */
 .profile-next-pages-btn {
   width: 90%;
-  position: fixed;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, 50%);
+}
+
+/* detailTopUpReward */
+.detailTopUpReward-bg-1 {
+  background-image: url("assets/Home/Recommended/banner-1.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
+}
+.detailTopUpReward-bg-2 {
+  background-image: url("assets/Home/Recommended/banner-2.png");
+  background-position: center; /* Center the image */
+  background-size: cover;
 }

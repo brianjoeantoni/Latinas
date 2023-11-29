@@ -83,6 +83,7 @@
         </div>
         <div class="flex justify-center items-center">
           <button
+            data-open-topup-modal
             class="text-xs mt-8 text-white bg-pink-500 py-2 px-10 rounded-lg"
           >
             Top Up Balance
@@ -90,6 +91,70 @@
         </div>
       </div>
     </div>
+
+    <dialog data-topup-modal class="modal-booked">
+      <div>
+        <div class="bg-white p-4 font-bold text-sm">
+          <p class="class-title text-purple-800">Choose Payment Method</p>
+        </div>
+        <hr />
+        <div
+          class="bg-white flex flex-col justify-center p-4 font-semibold text-sm rounded-b-lg"
+        >
+          <form action="" class="flex flex-col gap-4">
+            <div class="flex justify-between items-center">
+              <img class="w-20" src="assets/Balance/Logo QRIS.png" alt="" />
+              <label class="text-gray-400" for="qris">QRIS</label>
+              <input type="radio" id="qris" name="fav_language" value="HTML" />
+            </div>
+            <div class="flex justify-between items-center">
+              <img class="w-20" src="assets/Balance/Logo Ovo.png" alt="" />
+              <label class="text-gray-400" for="ovo">OVO</label>
+              <input type="radio" id="ovo" name="fav_language" value="HTML" />
+            </div>
+            <div class="flex justify-between items-center">
+              <img
+                class="w-20"
+                src="assets/Balance/Logo Shopeepay.png"
+                alt=""
+              />
+              <label class="text-gray-400" for="shopeepay">ShopeePay</label>
+              <input
+                type="radio"
+                id="shopeepay"
+                name="fav_language"
+                value="HTML"
+              />
+            </div>
+          </form>
+        </div>
+        <hr />
+        <div class="bg-white p-4 font-bold text-sm">
+          <p class="class-title text-purple-800">Summary</p>
+        </div>
+        <hr />
+        <div class="p-4 flex flex-col gap-4 text-gray-400 font-semibold text-sm">
+          <div class="flex justify-between">
+            <p>Service Fee</p>
+            <p class="text-pink-500">Rp<span id="serviceFee">4,000</span></p>
+          </div>
+          <div class="flex justify-between">
+            <p>Total Payment</p>
+            <p class="text-pink-500">Rp<span id="totalPayment">50,000</span></p>
+          </div>
+        </div>
+
+        <div class="flex justify-center py-6">
+          <button
+            class=" bg-pink-500 text-white py-1 px-12 rounded-md"
+            data-close-topup-modal
+            onclick="window.location.href='#'"
+          >
+            Top Up
+          </button>
+        </div>
+      </div>
+    </dialog>
 
     <nav
       class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"

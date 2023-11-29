@@ -11,9 +11,17 @@
   </head>
   <body class="bg-gray-100 mb-16">
     <div>
-      <p class="m-4 font-bold">Edit Profile</p>
+      <div class="p-4 flex items-center gap-4">
+        <img
+          onclick="window.location.href='profile.html'"
+          class="w-5 h-5"
+          src="assets/Profile/Arrow Back.png"
+          alt=""
+        />
+        <p class="font-bold">Edit Profile</p>
+      </div>
       <hr />
-      <div class="bg-white flex flex-col gap-1 p-4 m-4 rounded-lg text-xs">
+      <!-- <div class="bg-white flex flex-col gap-1 p-4 m-4 rounded-lg text-xs">
         <p class="text-gray-400">Complete Name</p>
         <p id="member-name" class="font-semibold">Member</p>
       </div>
@@ -24,12 +32,88 @@
       <div class="bg-white flex flex-col gap-1 p-4 m-4 rounded-lg text-xs">
         <p class="text-gray-400">Email</p>
         <p id="member-email" class="font-semibold">member@gmail.com</p>
+      </div> -->
+      <div
+        class="bg-white flex justify-center gap-1 px-4 py-8 mx-4 my-2 rounded-lg"
+      >
+        <img class="w-2/5 h-2/5" src="assets/Profile/Profile.png" alt="" />
+      </div>
+
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Email</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert Email*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">First Name</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert First Name*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Last Name</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert Last Name*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Username</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert Username*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Phone Number</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert Phone Number*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Date of Birth</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert DoB*/"
+        />
+      </div>
+      <div class="text-xs flex flex-col justify-center mx-4">
+        <p class="mt-2 font-semibold">Gender</p>
+        <input
+          class="bg-white p-4 my-2 rounded-lg border border-solid border-gray-400 w-full"
+          type="text"
+          id=""
+          name=""
+          placeholder="/*insert Gender*/"
+        />
       </div>
     </div>
 
-    <div class="profile-next-pages-btn">
+    <div class="flex justify-center mt-8 mx-4">
       <button
-        class="text-xs font-semibold text-white bg-pink-500 py-2 w-full rounded-lg"
+        class="text-xs font-semibold text-white bg-pink-500 py-2 rounded-lg w-full"
         onclick="window.location.href='profile.html'"
       >
         UPDATE

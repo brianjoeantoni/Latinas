@@ -37,3 +37,16 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+//modal 1
+const modalTopUp = document.querySelector("[data-topup-modal]");
+const openModalTopUp = document.querySelector("[data-open-topup-modal]");
+const closeModalTopUp = document.querySelector("[data-close-topup-modal]");
+
+openModalTopUp.addEventListener("click", () => {
+  modalTopUp.showModal();
+});
+
+closeModalTopUp.addEventListener("click", () => {
+  modalTopUp.close();
+});
