@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Sign Up</title>
+  </head>
+  <body class="bg-gray-100 mb-16">
+    <div>
+      <div class="p-4">
+        <p class="font-bold">Create Your Account</p>
+      </div>
+      <hr />
+
+      <div class="m-4">
+        <!-- insert form id -->
+        <form id="" class="flex flex-col gap-6" action="#">
+          <div>
+            <label class="absolute ml-6 mt-2 text-gray-400 text-sm" for="email"
+              ><b>Name</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="email"
+              placeholder="John Doe"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div>
+            <label class="absolute ml-6 mt-2 text-gray-400 text-sm" for="email"
+              ><b>Email</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="email"
+              placeholder="tes123@gmail.com"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="relative">
+            <div class="absolute eye-icon">
+              <img
+                id="togglePassword"
+                onclick="changeImageLogin()"
+                src="assets/Login/hide.png"
+                alt=""
+              />
+            </div>
+
+            <label
+              class="absolute ml-6 mt-2 text-gray-400 text-sm"
+              for="password"
+              ><b>Password</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="password"
+              placeholder="insert password"
+              name="password"
+              id="password"
+              required
+            />
+          </div>
+          <div class="relative">
+            <div class="absolute eye-icon">
+              <img
+                id="toggleConfirmPassword"
+                onclick="changeImageLogin2()"
+                src="assets/Login/hide.png"
+                alt=""
+              />
+            </div>
+
+            <label
+              class="absolute ml-6 mt-2 text-gray-400 text-sm"
+              for="password"
+              ><b>Password</b></label
+            >
+            <input
+              class="bg-white w-full pl-6 pt-7 pb-2 rounded-lg text-sm"
+              type="password"
+              placeholder="confirm password"
+              name="confirm-password"
+              id="confirm-password"
+              required
+            />
+          </div>
+
+          <div class="flex justify-end mr-4"></div>
+          <!-- insert button form === form id -->
+          <!-- change onclick function, validate through backend  -->
+          <input
+            class="text-sm text-white bg-purple-800 py-2 rounded-lg"
+            type="submit"
+            value="Sign Up"
+            onclick="window.location.href='index.html'"
+          />
+        </form>
+        <div class="text-center">
+          <div class="my-6 flex justify-between items-center gap-4">
+            <hr class="border border-solid border-gray-300 w-full" />
+            <p class="text-sm text-gray-400 text whitespace-nowrap">
+              or continue with
+            </p>
+            <hr class="border border-solid border-gray-300 w-full" />
+          </div>
+          <div class="btn-socialmedia-container flex justify-between flex-wrap">
+            <button
+              class="btn-fb flex items-center gap-4 px-4 py-2 bg-white border border-solid border-black rounded-sm"
+            >
+              <img src="assets/Login/facebook.png" alt="fb-logo" />
+              <p>Facebook</p>
+            </button>
+            <button
+              class="btn-google flex items-center gap-4 px-4 py-2 bg-white border border-solid border-black rounded-sm"
+            >
+              <img src="assets/Login/Google.png" alt="google-logo" />
+              <p>Google &nbsp;&nbsp;</p>
+            </button>
+          </div>
+          <p class="mt-4">
+            Already Have An Account?
+            <a class="text-blue-600 font-bold" href="index.html">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="signUp.js"></script>
+</html>

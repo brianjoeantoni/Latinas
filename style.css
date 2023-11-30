@@ -64,6 +64,21 @@ input[type="radio"] {
   z-index: 1;
 }
 
+/* Sign Up Page */
+.btn-fb {
+  width: 150px;
+}
+.btn-google {
+  width: 150px;
+}
+@media (max-width: 340px) {
+  .btn-socialmedia-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Home Page */
 .background-one {
   background-image: url("assets/Home/Img\ PoundFit.png");
