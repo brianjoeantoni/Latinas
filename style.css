@@ -1,3 +1,20 @@
+/* hide default calendar icon in date */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
 /* start custom style */
 
 .ratio {

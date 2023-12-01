@@ -57,13 +57,41 @@
         <div class="flex justify-end px-4 pb-4">
           <button
             class="flex text-white text-sm bg-pink-500 pb-0.5 px-6 rounded-md"
+            data-open-confirmation-modal
           >
-            Search
+            Cancel Class
           </button>
         </div>
       </div>
     </div>
-    
+
+    <dialog data-confirmation-modal class="modal-confirmation">
+      <div class="bg-white p-4 font-bold text-sm">
+        <p class="class-title text-purple-800">Confirmation</p>
+      </div>
+      <hr />
+      <div class="bg-white flex justify-center px-4 pt-6 text-sm rounded-b-lg">
+        <p class="font-semibold">
+          Are you sure you want to confirm this class schedule?
+        </p>
+      </div>
+      <div class="flex justify-around my-6">
+        <button
+          class="class-confirm-no-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-no-close-modal
+        >
+          No
+        </button>
+        <button
+          class="class-confirm-yes-button bg-pink-500 text-white py-1 px-12 rounded-md"
+          data-yes-close-modal
+          onclick="window.location.href='home.html'"
+        >
+          Yes
+        </button>
+      </div>
+    </dialog>
+
     <nav
       class="fixed bottom-0 flex justify-between bg-white px-16 w-full border-solid border border-t-black"
     >
@@ -86,5 +114,7 @@
         </a>
       </div>
     </nav>
+
+    <script src="detailBooking.js"></script>
   </body>
 </html>

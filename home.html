@@ -33,50 +33,6 @@
         </div>
       </div>
     </div>
-    <div id="date" class="overflow-x-scroll flex justify-between m-4">
-      <div
-        class="active text-center whitespace-nowrap font-bold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Sun</p>
-        <p>1 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Mon</p>
-        <p>2 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Tue</p>
-        <p>3 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Wed</p>
-        <p>4 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Thu</p>
-        <p>5 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Fri</p>
-        <p>6 Okt</p>
-      </div>
-      <div
-        class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
-      >
-        <p>Sat</p>
-        <p>7 Okt</p>
-      </div>
-    </div>
 
     <!-- change to user schedule -->
     <div id="schedule-detail">
@@ -109,6 +65,14 @@
         </div>
       </div> -->
       <div class="bg-white m-4 rounded-lg">
+        <!-- if no schedule -->
+        <!-- <div
+          class="flex justify-center items-center py-12 text-pink-500 font-semibold"
+        >
+          <p>There's no schedule today!</p>
+        </div> -->
+
+        <!-- if schedule exist -->
         <!-- change to dynamic booking-id -->
         <div id="" class="text-xs flex justify-between items-center gap-2 p-2">
           <div class="flex items-center gap-2">
@@ -125,6 +89,7 @@
           </div>
           <button
             class="flex items-center bg-pink-500 px-4 py-0.5 rounded-md text-white"
+            onclick="window.location.href='detailBooking.html'"
           >
             Detail
           </button>
@@ -168,6 +133,50 @@
           >
             Detail
           </button>
+        </div>
+      </div>
+      <div id="date" class="overflow-x-scroll flex justify-between m-4">
+        <div
+          class="active text-center whitespace-nowrap font-bold text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Sun</p>
+          <p>1 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Mon</p>
+          <p>2 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Tue</p>
+          <p>3 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Wed</p>
+          <p>4 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Thu</p>
+          <p>5 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Fri</p>
+          <p>6 Okt</p>
+        </div>
+        <div
+          class="text-center whitespace-nowrap text-xs bg-white px-2 py-1 border border-solid border-pink-500 rounded-sm"
+        >
+          <p>Sat</p>
+          <p>7 Okt</p>
         </div>
       </div>
     </div>
