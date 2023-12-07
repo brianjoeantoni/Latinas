@@ -61,6 +61,9 @@ input[type="radio"] {
   accent-color: #8f8f8f;
 }
 
+.google-left {
+  left: 5%;
+}
 /* end custom style */
 
 /* Login Page */
